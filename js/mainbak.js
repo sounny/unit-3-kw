@@ -52,25 +52,26 @@ var container = d3.select("body") //get the <body> element from the DOM
 //     .attr("height", 400) //rectangle height
 
 //Example 1.6 line 9...innerRect block
-var innerRect = container.append("rect") //put a new rect in the svg
-    .datum(400)
-    .attr("width", 800) //rectangle width
-    .attr("height", 400) //rectangle height
+// var innerRect = container.append("rect") //put a new rect in the svg
+//     .datum(400)
+//     .attr("width", 800) //rectangle width
+//     .attr("height", 400) //rectangle height
 
-    console.log(innerRect);
+    // console.log(innerRect);
     
-        //Example 1.7 line 1...innerRect block
-        var innerRect = container.append("rect") //put a new rect in the svg
-        .datum(400) //a single value is a datum
-        .attr("width", function(d){ //rectangle width
-            return d * 2; //400 * 2 = 800
-        }) 
-        .attr("height", function(d){ //rectangle height
-            return d; //400
-        })
+        // //Example 1.7 line 1...innerRect block
+        // var innerRect = container.append("rect") //put a new rect in the svg
+        // .datum(400) //a single value is a datum
+        // .attr("width", function(d){ //rectangle width
+        //     return d * 2; //400 * 2 = 800
+        // }) 
+        // .attr("height", function(d){ //rectangle height
+        //     return d; //400
+        // })
 
+        // console.log(innerRect);
 
-            //Example 1.8 line 1...innerRect block
+    //Example 1.8 line 1...innerRect block
     var innerRect = container.append("rect")
     .datum(400) //a single value is a DATUM
     .attr("width", function(d){ //rectangle width
@@ -83,6 +84,8 @@ var innerRect = container.append("rect") //put a new rect in the svg
     .attr("x", 50) //position from left on the x (horizontal) axis
     .attr("y", 50) //position from top on the y (vertical) axis
     .style("fill", "#FFFFFF"); //fill color
+
+    console.log(innerRect);
 
     {
         "type":"FeatureCollection",
