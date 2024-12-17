@@ -1,54 +1,50 @@
 <!DOCTYPE html>
+<!-- This declaration defines the document type and version of HTML -->
 <html lang="en">
+    <!-- The lang attribute declares the language of the webpage -->
+
     <head>
+        <!-- The head section contains meta-information about the document -->
         <meta charset="utf-8">
+        <!-- Sets the character encoding for the HTML document to UTF-8 -->
+
         <meta name="viewport" content="width=device-width">
-            <title></title>
+        <!-- Ensures the webpage is responsive by setting the viewport width to the device's width -->
 
-        <!-- put your external stylesheet links here-->
+        <title>Bubble Chart</title>
+        <!-- Sets the title of the webpage, which appears in the browser tab -->
+
+        <!-- External Stylesheet -->
         <link rel="stylesheet" href="css/style.css">
-        
-         <!--you can also place internal styles here;
-             place these within <style> tags-->
-                <!-- <style>
-                    #mydiv {
-                        background-color: rgb(153, 128, 128);
-                        width: 80%;
-                        margin: 0 auto;
-                        height: 100px;
-                    }
-                </style>    -->
+        <!-- Links to an external CSS file located in the 'css' folder for styling the webpage -->
     </head>
-    <!-- <div id="mydiv">
-        Unit 3
-    </div> -->
-    
-    <script>
-        // var mydiv = document.getElementById("mydiv");
-        // mydiv.addEventListener("click", function(){
-        //     alert("Hello World!");
-        // });
-    </script>
+
     <body>
-        <!--put your initial page content here-->
-        <!-- "Bubble Chart" -->
-        <!--you can also use this space for internal scripts;
-        place these within <script> tags-->
+        <!-- The body section contains all the content that will be displayed on the webpage -->
 
-        <!--put your external script links here-->
-        
-        <script type="text/javascript" src="lib/d3.v7.min.js"></script>
-        <script type="text/javascript" src="lib/d3.v7.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="lib/topojson-master/index.js"></script>
-        <script src="https://d3js.org/topojson.v1.min.js"></script>
-        <!-- Include the D3.js library from a CDN -->
-        <script src="https://d3js.org/d3.v7.min.js
-        Links to an external site."></script>
-        <!-- Include the d3-geo-projection library from a CDN -->
-        <script src="https://d3js.org/d3-geo-projection.v3.min.js
-        Links to an external site."></script>
+        <!-- Main Content -->
+        <div id="chart-container">
+            <!-- A div element with the id 'chart-container' where the bubble chart will be rendered -->
+            <!-- Bubble Chart will be rendered here -->
+        </div>
 
-        
+        <!-- External Libraries -->
+        <!-- These scripts are external JavaScript libraries that add functionality to the webpage -->
+
+        <!-- Include D3.js library from CDN -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <!-- Loads the D3.js library version 7 from a Content Delivery Network (CDN) for data visualization -->
+
+        <!-- Include d3-geo-projection library from CDN -->
+        <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+        <!-- Loads the d3-geo-projection library version 3 from a CDN, which provides geographic projections for D3.js -->
+
+        <!-- Include TopoJSON library from CDN -->
+        <script src="https://unpkg.com/topojson@3"></script>
+        <!-- Loads the TopoJSON library -->
+         
+        <!-- Your Custom Scripts -->
+        <script src="js/main.js"></script>
+        <!-- Links to a custom JavaScript file located in the 'js' folder where your main scripts are written -->
     </body>
 </html>
